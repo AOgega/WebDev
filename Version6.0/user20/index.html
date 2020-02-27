@@ -1,18 +1,70 @@
 <html lang="en">
     <!--Version 6.0 
-	Name:
-	Date Completed:
+	Name: Amos Ogea
+	Date Completed: 02/21/2020
     -->
     <head>
         
         <title>Web Development User #20</title>
-    
+<style>
+   ul li {color: red}     
+    .emphasis { color: purple;}
+</style>
+                
     </head>
     
     <body>
+
+        <ul>
+            <li>Hola</li>
+        </ul>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         
-        <center>My name is User #20</center>
-    
+<script>
+    jQuery('ul li').addClass('emphasis');
+    $('ul li').addClass('emphasis');
+</script>
+        
+        <table border="0" width="350" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img border="0" src="roulette.jpg" width="152" height="216"></td>
+    <td>
+
+<form name="fire">
+Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+<p>
+<input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+</p>
+
+</form>
+
+<script>
+
+//Russian Roulette Game- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("Bang. You\'re dead!")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+</script>
+
+<p align="center">This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
+
+</td>
+  </tr>
+</table>
     </body>
 
 </html>
